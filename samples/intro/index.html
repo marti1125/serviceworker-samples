@@ -29,9 +29,7 @@
 
   <script>
     if ('serviceWorker' in navigator) {
-
       document.querySelector('#availability').textContent = 'are';
-
       navigator.serviceWorker.register('service-worker.js', {
           scope: './'
       }).then(function (registration) {
